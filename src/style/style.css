@@ -4,6 +4,15 @@ body {
   font-family: sans-serif;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .buttonContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -765,6 +774,7 @@ body {
             flex-direction: column;
   }
   #dataCardCenter {
+    width: 100vw;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -774,7 +784,7 @@ body {
     margin-bottom: 2rem;
   }
   #serviceActivity {
-    width: 100%;
+    width: 100vw;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -819,7 +829,18 @@ body {
     width: 100%;
   }
   #news {
-    margin-bottom: 5rem;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw;
+    margin-bottom: 5;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  #newsContainer {
+    width: 100vw;
+  }
+  #aboutButtonContainer {
+    width: 18rem;
   }
   .navigationBar {
     -webkit-box-orient: vertical;
@@ -833,6 +854,27 @@ body {
   #navEle {
     width: 100%;
     padding-top: 2rem;
+  }
+  #aboutBox {
+    width: 18rem;
+  }
+  #price {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  #reviewOrderContainer {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  #footerContainer {
+    width: 100vw;
+    margin: 0;
+  }
+  #footer {
+    margin: 0;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
 }
 /*# sourceMappingURL=style.css.map */
