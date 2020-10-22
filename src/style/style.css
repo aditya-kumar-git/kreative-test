@@ -139,21 +139,27 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 2rem;
 }
 
 #profilePic {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateY(-7.5rem);
+          transform: translateY(-7.5rem);
 }
 
 #profileName {
   color: #696161;
   padding-bottom: 1rem;
   font-weight: 600;
+  -webkit-transform: translateY(-6.5rem);
+          transform: translateY(-6.5rem);
+}
+
+#profileDes {
+  -webkit-transform: translateY(-6rem);
+          transform: translateY(-6rem);
 }
 
 #profileData {
