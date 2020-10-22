@@ -38,8 +38,10 @@ body {
   color: white;
   cursor: pointer;
   transition-duration: 600ms;
+  border: 1px black solid;
   &:hover {
-    background-color: #111111;
+    background-color: #fff;
+    color: black;
   }
 }
 
@@ -213,7 +215,7 @@ body {
 //!Support
 
 #support {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,7 +262,7 @@ body {
   //   height: 25rem;
 }
 
-#dataCardButton {
+.dataCardButton {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   width: 100%;
@@ -276,26 +278,24 @@ body {
   font-weight: 500;
 }
 
-#dataCardImage {
+.dataCardImage {
   width: 100%;
-
   height: 6rem;
   margin-top: 0.5rem;
 }
-#dataCardDesc {
+.dataCardDesc {
   color: #696060;
   margin-bottom: 2rem;
 }
-#dataCardBigText {
+.dataCardBigText {
   margin-top: 1.4rem;
   margin-bottom: 0.4rem;
   font-weight: bold;
   font-size: 1.6rem;
 }
-#renderedListContainer {
+.renderedListContainer {
   margin-bottom: 3rem;
   font-size: 0.9rem;
-
   height: 5rem;
   width: 100%;
 }
@@ -313,7 +313,7 @@ body {
   flex-direction: column;
   align-items: center;
 
-  margin-top: 6rem;
+  margin-top: 5rem;
 }
 
 #aboutText {
@@ -373,6 +373,7 @@ body {
   div {
     height: 2rem;
     width: 2rem;
+    cursor: pointer;
   }
 }
 
@@ -438,6 +439,9 @@ body {
   display: flex;
   align-items: center;
   font-weight: bold;
+}
+.amtNameCont {
+  display: flex;
 }
 .newsTitle {
   font-size: 2rem;
@@ -507,6 +511,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 3rem;
+  padding-left: 3rem;
 }
 #footerIcons {
   display: flex;
@@ -520,4 +525,87 @@ body {
 .ICONsvg {
   width: 2px;
   height: 2px;
+}
+
+//@RESPONSIVE
+
+@media screen and (max-width: 1000px) {
+  #profileData {
+    flex-direction: column;
+  }
+  #price {
+    width: 100%;
+    margin-right: 0;
+    text-align: center;
+    padding: 0;
+    align-items: center;
+  }
+  #price_starting {
+    justify-content: center;
+  }
+  #reviewOrderContainer {
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #dataCardCenter {
+    flex-direction: column;
+  }
+
+  .dataCard {
+    margin-bottom: 2rem;
+  }
+  #serviceActivity {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .newsCardLowerBlock {
+    flex-direction: column;
+  }
+  .newsCardUpperBlock {
+    flex-direction: column;
+  }
+  .newsInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .newsButtonContainer {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .amtNameCont {
+    text-align: center;
+    flex-direction: column;
+  }
+  .newsAmount {
+    margin: 0;
+  }
+  .newsName {
+    margin: 0;
+  }
+
+  #footer {
+    width: 100%;
+  }
+  #news {
+    margin-bottom: 5rem;
+  }
+
+  .navigationBar {
+    flex-direction: column;
+  }
+  #logoContainer {
+    width: 100%;
+  }
+  #navEle {
+    width: 100%;
+    padding-top: 2rem;
+  }
 }

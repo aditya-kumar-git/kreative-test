@@ -11,19 +11,24 @@ export class DataCards extends Component {
     })
   }
   render() {
-    var { title, desc,wideImage } = this.props
+    var { title, desc, wideImage } = this.props
     return (
       <div className="dataCard">
-        <div id="dataCardTitle">{title}</div>
-        <div id="dataCardImage" style={{backgroundImage:`url("${wideImage}")`,backgroundSize:"cover",backgroundPosition:"center"}} ></div>
-        <div id="dataCardBigText">2000 $blondish</div>
-        <div id="dataCardDesc">{desc}</div>
+        <div className="dataCardTitle">{title}</div>
+        <div
+          className="dataCardImage"
+          style={{
+            backgroundImage: `url("${wideImage}")`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        ></div>
+        <div className="dataCardBigText">2000 $blondish</div>
+        <div className="dataCardDesc">{desc}</div>
 
-        <div id="renderedListContainer">{this.renderPoints()}</div>
+        <div className="renderedListContainer">{this.renderPoints()}</div>
 
-        <div id="dataCardButton" >
-          Buy
-        </div>
+        <div className="dataCardButton">Buy</div>
       </div>
     )
   }
