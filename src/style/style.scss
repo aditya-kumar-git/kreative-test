@@ -1,0 +1,516 @@
+$accentColor: #57c49a;
+$borderAccent: #e5e5e5;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+// !Button
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.greenButton {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 20px;
+  background-color: $accentColor;
+  color: white;
+  cursor: pointer;
+  transition-duration: 600ms;
+  &:hover {
+    background-color: #409273;
+  }
+}
+.blackButton {
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition-duration: 600ms;
+  &:hover {
+    background-color: #111111;
+  }
+}
+
+// ! NAvigation Bar
+
+.navigationBar {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.navChild {
+  width: 50%;
+}
+#logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo {
+  background-color: $accentColor;
+  color: white;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+#navEle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  div {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    cursor: pointer;
+    transition-duration: 300ms;
+    &:hover {
+      color: $accentColor;
+    }
+  }
+}
+
+//!Profile Images
+
+#banner {
+  height: 30vh;
+  background-color: red;
+}
+
+#profileContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+#profilePic {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  background-color: green;
+  transform: translateY(-50%);
+}
+
+#profileName {
+  color: #696161;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+// ! profileData
+
+#profileData {
+  display: flex;
+  align-items: center;
+}
+
+.profileDataChild {
+  width: 50%;
+}
+#price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  box-sizing: border-box;
+  padding-right: 3rem;
+}
+#price_name {
+  font-weight: bold;
+  font-size: 3rem;
+}
+#price_value {
+  font-weight: bold;
+  font-size: 7rem;
+  color: $accentColor;
+}
+#price_starting {
+  padding-top: 0.6rem;
+  display: flex;
+  div {
+    padding-right: 0.5rem;
+  }
+}
+
+//#Review Order
+
+#reviewOrderContainer {
+  box-sizing: border-box;
+  padding-left: 3rem;
+  font-weight: 600;
+}
+
+#reviewOrder {
+  padding: 2rem;
+  width: 18rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 2px $borderAccent solid;
+}
+#reviewOrderTwo {
+  padding: 2rem;
+  width: 18rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px $borderAccent solid;
+  border-top: 0;
+}
+
+#amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    width: 50%;
+  }
+}
+
+.divider {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: $borderAccent;
+  width: 100%;
+  height: 2px;
+}
+#amountInput_tab {
+  text-align: right;
+  padding-top: 0.7rem;
+  width: 100%;
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.7rem;
+}
+
+#quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 4rem;
+}
+
+//!Support
+
+#support {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#supportText {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+#supportButton {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+//! Data Cards
+
+#dataCardContainer {
+  margin-top: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#dataCardCenter {
+  width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dataCard {
+  border: 4px $borderAccent solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  font-weight: bold;
+  width: 18rem;
+  //   height: 25rem;
+}
+
+#dataCardButton {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px;
+  background-color: $accentColor;
+  color: white;
+  transition-duration: 600ms;
+  &:hover {
+    background-color: #409273;
+  }
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#dataCardImage {
+  width: 100%;
+  background-color: red;
+  height: 6rem;
+  margin-top: 0.5rem;
+}
+#dataCardDesc {
+  color: #696060;
+  margin-bottom: 2rem;
+}
+#dataCardBigText {
+  margin-top: 1.4rem;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+#renderedListContainer {
+  margin-bottom: 3rem;
+  font-size: 0.8rem;
+
+  height: 5rem;
+  width: 100%;
+}
+.renderedList {
+  padding-top: 0.6rem;
+  //   padding-bottom: 0.5rem;
+  font-weight: lighter;
+  display: flex;
+  align-items: center;
+}
+
+//!ABOUT
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 6rem;
+}
+
+#aboutText {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+#aboutBox {
+  padding: 1rem;
+  border: 2px $borderAccent solid;
+  width: 28rem;
+  border-radius: 10px;
+}
+#readMore {
+  text-decoration: underline;
+  color: #696060;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+#aboutButtonContainer {
+  margin-top: 1rem;
+  display: flex;
+  width: 28rem;
+  padding: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.aboutButtons {
+  border: 2px black solid;
+  border-radius: 30px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  cursor: pointer;
+  transition-duration: 300ms;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+#aboutLogos {
+  width: 28rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  div {
+    height: 2rem;
+    width: 2rem;
+    background-color: red;
+  }
+}
+
+//!Service and Activity
+#serviceActivityContainer {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#serviceActivity {
+  width: 70rem;
+  display: flex;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+.serviceActivityChild {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: #c4c4c4;
+  transition-duration: 300ms;
+  cursor: pointer;
+  &:hover {
+    color: rgb(58, 58, 58);
+  }
+}
+.serAcHighlight {
+  color: black;
+  border-bottom: 3px $accentColor solid;
+}
+
+//!NEWS
+
+#newsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+#news {
+  background-color: #fbfafb;
+  width: 70rem;
+  border-radius: 10px;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  padding-right: 4rem;
+  padding-left: 4rem;
+  box-sizing: border-box;
+  margin-bottom: 20rem;
+}
+
+.newsCard {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.newsCardUpperBlock {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.newsTitle {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.newsAmount {
+  margin-left: 2rem;
+}
+.newsName {
+  margin-left: 0.5rem;
+  color: $accentColor;
+}
+
+.newsCardLowerBlock {
+  margin-top: 4rem;
+  display: flex;
+
+  width: 100%;
+}
+.newsInfo {
+  font-weight: normal;
+  width: 60%;
+  font-size: 1.3rem;
+}
+.newsButtonContainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.newsButton {
+  color: white;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1rem;
+  width: 10rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.newsBuyButton {
+  background-color: $accentColor;
+  &:hover {
+    background-color: #409273;
+  }
+}
+.newsInfoButton {
+  background-color: black;
+  transition-duration: 600ms;
+  &:hover {
+    background-color: #111111;
+  }
+}
+
+//!FOOTER
+
+#footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer {
+  width: 70rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+#footerIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    margin-right: 3rem;
+  }
+}
