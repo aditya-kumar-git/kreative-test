@@ -123,6 +123,7 @@ export default class App extends Component {
         <div id="dataCardContainer">
           <div id="dataCardCenter">
             <DataCards
+            bigText="2000 $&blondish"
               desc="Per Month"
               title="Kreative Membership"
               points={[
@@ -133,6 +134,7 @@ export default class App extends Component {
               wideImage={Girl1}
             />
             <DataCards
+            bigText="$200 USD"
               desc="Auction Starting Price"
               title="Signed Digital Collectible"
               points={[
@@ -142,6 +144,7 @@ export default class App extends Component {
               wideImage={Girl2}
             />
             <DataCards
+            bigText="2000 $&blondish"
               wideImage={Girl3}
               desc="Auction Starting Price"
               title="Fan Livestream"

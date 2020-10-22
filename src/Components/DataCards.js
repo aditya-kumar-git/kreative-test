@@ -10,6 +10,28 @@ export class DataCards extends Component {
       )
     })
   }
+
+
+  renderBlondish = () => {
+    if(this.props.bigText!== "2000 $&blondish")
+  {
+
+    return <div className="dataCardBigText">{this.props.bigText}</div>
+  }
+  else
+  {
+    var x = this.props.bigText.split("&")
+
+    return <div
+    style={{display:"flex"}}
+    >
+      <div className="dataCardBigText">{x[0]}</div>
+      <div className="dataCardBigText" style={{color:"#57c49a"}}>{x[1]}</div>
+    </div>
+  }}
+  
+
+
   render() {
     var { title, desc, wideImage } = this.props
     return (
@@ -23,7 +45,7 @@ export class DataCards extends Component {
             backgroundPosition: "center",
           }}
         ></div>
-        <div className="dataCardBigText">2000 $blondish</div>
+        <div >{this.renderBlondish()}</div>
         <div className="dataCardDesc">{desc}</div>
 
         <div className="renderedListContainer">{this.renderPoints()}</div>
