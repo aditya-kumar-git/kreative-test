@@ -1,6 +1,15 @@
 import React, { Component } from "react"
 import DataCards from "./Components/DataCards"
 import NewsCard from "./Components/NewsCard"
+import Girl1 from "./Images/girl1.jpg"
+import Girl2 from "./Images/girl2.jpg"
+import Girl3 from "./Images/girl3.jpg"
+import insta from "./Images/insta.png"
+import instaIcon from "./Images/instaIcon.png"
+import youtube from "./Images/youtube.png"
+import twitch from "./Images/twitch.png"
+import twitter from "./Images/twitter.png"
+import twitterIcon from "./Images/twitterIcon.png"
 
 export default class App extends Component {
   render() {
@@ -29,7 +38,14 @@ export default class App extends Component {
 
         {/* //@Profile pic */}
         <div id="profileContainer">
-          <div id="profilePic"></div>
+          <div
+            style={{
+              backgroundImage: `url("${Girl1}")`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+            id="profilePic"
+          ></div>
           <div id="profileName">Blond:ish</div>
           <div id="profileDes">Making music as a producer/DJ</div>
         </div>
@@ -114,6 +130,7 @@ export default class App extends Component {
                 "Early acess to new songs",
                 "Acess to discord",
               ]}
+              wideImage={Girl1}
             />
             <DataCards
               desc="Auction Starting Price"
@@ -122,8 +139,10 @@ export default class App extends Component {
                 "Only 10 available of signed collectibles",
                 "Sogned album cover with a note",
               ]}
+              wideImage={Girl2}
             />
             <DataCards
+              wideImage={Girl3}
               desc="Auction Starting Price"
               title="Fan Livestream"
               points={[
@@ -134,88 +153,131 @@ export default class App extends Component {
           </div>
         </div>
 
-
-
-
-
         {/* //!About */}
 
-<div id="about">
-    <div id="aboutText">About</div>
-    <div id="aboutLogos">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <div id="aboutBox">
-    <div>    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quam laboriosam, qui reiciendis quibusdam nisi, temporibus recusandae velit assumenda voluptas minima veritatis cumque, odio voluptates officia magnam ab error voluptate!
-        Officiis cupiditate eligendi consequuntur dolorum modi. Et eos ratione numquam, magni quasi qui atque id adipisci maiores aut molestias asperiores aliquam quidem nobis ipsum rerum earum, illo corporis harum quod.
-        Vero deleniti delectus voluptas obcaecati asperiores harum laboriosam consequuntur minus non nobis corrupti eaque exercitationem autem quos esse, possimus ab ducimus quas quasi dolore quisquam. At fugiat culpa unde aspernatur?</div>
-        <div id="readMore">Read More</div>
-    </div>
-    <div id="aboutButtonContainer">
-        <div id="aboutFollowButton" className="aboutButtons">Follow</div>
-        <div id="aboutShareButton" className="aboutButtons">Share</div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-{/* //!Service and Activity*/}
-
-
-<div id="serviceActivityContainer">
-
-<div id="serviceActivity">
-    <div  className="serviceActivityChild serAcHighlight">Service</div>
-    <div className="serviceActivityChild">Activity</div>
-</div>
-
-      </div>
-
-
-
-
-
-{/* //!News Collection */}
-
-
-<div id="newsContainer">
-    <div id="news">
-    <NewsCard title="Twitter Retweet" amount="2000" name ="$blondish" infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam." />
-    <NewsCard title="Meet & Greet" amount="20,000" name ="$blondish" infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam." />
-    <NewsCard title="Custom Song" amount="200,000" name ="$blondish" infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam." />
-    </div>
-</div>
-
-
-
-{/* //!Footer */}
-
-<div id="footerContainer">
-
-    <div id="footer">
-        <div id="footerText">2020 Kreative</div>
-
-        <div id="footerIcons">
-            <div>t</div>
-            <div>I</div>
+        <div id="about">
+          <div id="aboutText">About</div>
+          <div id="aboutLogos">
+            <div
+              style={{
+                backgroundImage: `url("${insta}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div
+              style={{
+                backgroundImage: `url("${twitter}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div
+              style={{
+                backgroundImage: `url("${twitch}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+            <div
+              style={{
+                backgroundImage: `url("${youtube}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            ></div>
+          </div>
+          <div id="aboutBox">
+            <div>
+              {" "}
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet
+              quam laboriosam, qui reiciendis quibusdam nisi, temporibus
+              recusandae velit assumenda voluptas minima veritatis cumque, odio
+              voluptates officia magnam ab error voluptate! Officiis cupiditate
+              eligendi consequuntur dolorum modi. Et eos ratione numquam, magni
+              quasi qui atque id adipisci maiores aut molestias asperiores
+              aliquam quidem nobis ipsum rerum earum, illo corporis harum quod.
+              Vero deleniti delectus voluptas obcaecati asperiores harum
+              laboriosam consequuntur minus non nobis corrupti eaque
+              exercitationem autem quos esse, possimus ab ducimus quas quasi
+              dolore quisquam. At fugiat culpa unde aspernatur?
+            </div>
+            <div id="readMore">Read More</div>
+          </div>
+          <div id="aboutButtonContainer">
+            <div id="aboutFollowButton" className="aboutButtons">
+              Follow
+            </div>
+            <div id="aboutShareButton" className="aboutButtons">
+              Share
+            </div>
+          </div>
         </div>
-    </div>
 
-</div>
+        {/* //!Service and Activity*/}
 
+        <div id="serviceActivityContainer">
+          <div id="serviceActivity">
+            <div className="serviceActivityChild serAcHighlight">Service</div>
+            <div className="serviceActivityChild">Activity</div>
+          </div>
+        </div>
 
-</div>
+        {/* //!News Collection */}
+
+        <div id="newsContainer">
+          <div id="news">
+            <NewsCard
+              title="Twitter Retweet"
+              amount="2000"
+              name="$blondish"
+              infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam."
+            />
+            <NewsCard
+              title="Meet & Greet"
+              amount="20,000"
+              name="$blondish"
+              infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam."
+            />
+            <NewsCard
+              title="Custom Song"
+              amount="200,000"
+              name="$blondish"
+              infoText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates asperiores inventore suscipit temporibus ratione enim nostrum amet impedit nam. Perspiciatis eos eius inventore cum laudantium dicta at aut beatae magnam."
+            />
+          </div>
+        </div>
+
+        {/* //!Footer */}
+
+        <div id="footerContainer">
+          <div id="footer">
+            <div id="footerText">2020 Kreative</div>
+
+            <div id="footerIcons">
+              <div
+              
+              style={{
+                backgroundImage: `url("${instaIcon}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height:"2rem",width:"2rem",cursor:"pointer"
+              }}
+              ></div>
+              <div
+              style={{
+                backgroundImage: `url("${twitterIcon}")`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                height:"2rem",width:"2rem",cursor:"pointer"
+              }}
+              >
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     )
   }
 }

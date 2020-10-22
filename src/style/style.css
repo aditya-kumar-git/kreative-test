@@ -118,7 +118,9 @@ body {
 
 #banner {
   height: 30vh;
-  background-color: red;
+  background-image: url("../Images/umbrella.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 #profileContainer {
@@ -142,7 +144,6 @@ body {
   border-radius: 50%;
   width: 15rem;
   height: 15rem;
-  background-color: green;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
@@ -372,7 +373,6 @@ body {
 
 #dataCardImage {
   width: 100%;
-  background-color: red;
   height: 6rem;
   margin-top: 0.5rem;
 }
@@ -391,7 +391,7 @@ body {
 
 #renderedListContainer {
   margin-bottom: 3rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   height: 5rem;
   width: 100%;
 }
@@ -498,7 +498,6 @@ body {
 #aboutLogos div {
   height: 2rem;
   width: 2rem;
-  background-color: red;
 }
 
 #serviceActivityContainer {
@@ -702,5 +701,10 @@ body {
 
 #footerIcons div {
   margin-right: 3rem;
+}
+
+.ICONsvg {
+  width: 2px;
+  height: 2px;
 }
 /*# sourceMappingURL=style.css.map */

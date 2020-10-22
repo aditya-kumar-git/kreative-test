@@ -11,11 +11,11 @@ export class DataCards extends Component {
     })
   }
   render() {
-    var { title, desc } = this.props
+    var { title, desc,wideImage } = this.props
     return (
       <div className="dataCard">
         <div id="dataCardTitle">{title}</div>
-        <div id="dataCardImage"></div>
+        <div id="dataCardImage" style={{backgroundImage:`url("${wideImage}")`,backgroundSize:"cover",backgroundPosition:"center"}} ></div>
         <div id="dataCardBigText">2000 $blondish</div>
         <div id="dataCardDesc">{desc}</div>
 
